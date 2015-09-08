@@ -31,3 +31,4 @@ import {Tabs, Tab} from 'legit-tabs';
 
 - `name`: a unique name for the tab, represents the tab title.
 - `containerStyle`: style for the containing div that holds the content
+- anything else you'd like to set on the tab's li
