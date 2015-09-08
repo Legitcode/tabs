@@ -5,6 +5,8 @@ A basic tabs component, with a few customizable props.
 ##Example
 
 ~~~js
+import {Tabs, Tab} from 'legit-tabs';
+
 <Tabs className="accordion-tabs-minimal" active="second">
   <Tab name="first">
     hey
