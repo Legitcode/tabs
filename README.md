@@ -2,6 +2,10 @@
 
 A basic tabs component, with a few customizable props.
 
+##Install
+
+`npm install legit-tabs`
+
 ##Example
 
 ~~~js
