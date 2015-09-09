@@ -5,7 +5,9 @@ export default class Tab extends React.Component {
     name: React.PropTypes.string.isRequired,
     clicked: React.PropTypes.func,
     active: React.PropTypes.bool,
-    children: React.PropTypes.any.isRequired
+    children: React.PropTypes.any.isRequired,
+    liStyle: React.PropTypes.object,
+    liClass: React.PropTypes.string
   }
 
   constructor(props) {
@@ -20,7 +22,7 @@ export default class Tab extends React.Component {
   render() {
     let linkClass = this.props.active ? 'active' : null;
     return (
-      <li>
+      <li className={this.props.liClass || 'tab'} style={this.props.liStyle || null}>
         <a
           className={linkClass}
           onClick={this.clicked}>

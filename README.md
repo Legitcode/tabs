@@ -34,4 +34,5 @@ import {Tabs, Tab} from 'legit-tabs';
 **Tab**:
 
 - `name`: a unique name for the tab, represents the tab title.
+- `liClass`, `liStyle`: class on the li for the tab
 - anything else you'd like to set on the tab's containing div.
