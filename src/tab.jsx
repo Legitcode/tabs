@@ -3,8 +3,8 @@ import React from 'react';
 export default class Tab extends React.Component {
   static propTypes = {
     name: React.PropTypes.string.isRequired,
-    clicked: React.PropTypes.func.isRequired,
-    active: React.PropTypes.string.isRequired,
+    clicked: React.PropTypes.func,
+    active: React.PropTypes.bool,
     children: React.PropTypes.any.isRequired
   }
 
