@@ -9,7 +9,7 @@ export default class Basic extends React.Component {
         <Tab name="first">
           hey
         </Tab>
-        <Tab name="second" containerStyle={{background: 'yellow'}}>
+        <Tab name="second" style={{background: 'yellow'}}>
           whats up
         </Tab>
         <Tab name="third">

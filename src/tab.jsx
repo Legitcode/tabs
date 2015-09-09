@@ -2,8 +2,10 @@ import React from 'react';
 
 export default class Tab extends React.Component {
   static propTypes = {
-    name: React.PropTypes.string,
-    tabClicked: React.PropTypes.func
+    name: React.PropTypes.string.isRequired,
+    clicked: React.PropTypes.func.isRequired,
+    active: React.PropTypes.string.isRequired,
+    children: React.PropTypes.any.isRequired
   }
 
   constructor(props) {
@@ -17,9 +19,8 @@ export default class Tab extends React.Component {
 
   render() {
     let linkClass = this.props.active ? 'active' : null;
-
     return (
-      <li {...this.props}>
+      <li>
         <a
           className={linkClass}
           onClick={this.clicked}>
@@ -27,7 +28,7 @@ export default class Tab extends React.Component {
         </a>
 
         {this.props.active ?
-          <div style={this.props.containerStyle} className="tab-content">
+          <div {...this.props}>
             { this.props.children }
           </div>
         : null}

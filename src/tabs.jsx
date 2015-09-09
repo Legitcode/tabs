@@ -17,7 +17,7 @@ export default class Tabs extends React.Component {
       return React.cloneElement(child, {
         ...child.props,
         clicked: this.clicked,
-        active: this.state.active == child.props.name ? true : false
+        active: this.state.active === child.props.name ? true : false
       })
     })
   }
