@@ -20,10 +20,11 @@ export default class Tab extends React.Component {
   }
 
   render() {
-    let linkClass = this.props.active ? 'is-active' : null;
+    let linkClass = this.props.active ? 'is-active' : null,
+        { liClass, liStyle, contentClass, ...props } = this.props;
 
     return (
-      <li className={`tab-header-and-content ${this.props.liClass}`} style={this.props.liStyle || null}>
+      <li className={`tab-header-and-content ${liClass}`} style={liStyle || null}>
         <a
           className={`tab-link ${linkClass}`}
           onClick={this.clicked}>
@@ -31,7 +32,7 @@ export default class Tab extends React.Component {
         </a>
 
         {this.props.active ?
-          <div {...this.props} className={`tab-content ${this.props.contentClass}`}>
+          <div {...props} className={`tab-content ${contentClass}`}>
             { this.props.children }
           </div>
         : null}

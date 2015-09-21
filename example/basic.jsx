@@ -8,7 +8,7 @@ export default class Basic extends React.Component {
   render() {
     return (
       <Tabs className="my-custom-tab-class" active="second">
-        <Tab name="first">
+        <Tab name="first" liClass="custom-list-class">
           hey
         </Tab>
         <Tab name="second" style={{background: 'yellow'}}>

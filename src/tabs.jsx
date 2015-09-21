@@ -27,8 +27,10 @@ export default class Tabs extends React.Component {
   }
 
   render() {
+    let { className, ...props } = this.props;
+
     return (
-      <ul className={`accordion-tabs-minimal ${this.props.className}`}>
+      <ul className={`accordion-tabs-minimal ${this.props.className}`} {...props}>
         { this.renderChildren() }
       </ul>
     )
