@@ -7,7 +7,7 @@ export default class Basic extends React.Component {
 
   render() {
     return (
-      <Tabs className="accordion-tabs-minimal" active="second">
+      <Tabs className="my-custom-tab-class" active="second">
         <Tab name="first">
           hey
         </Tab>
