@@ -1,0 +1,45 @@
+.accordion-tabs-minimal {
+  line-height: 1.5;
+  padding: 0;
+}
+
+.accordion-tabs-minimal::after {
+  clear: both;
+  content: "";
+}
+
+.accordion-tabs-minimal li.tab-header-and-content {
+  list-style: none;
+  display: inline;
+}
+
+.accordion-tabs-minimal a.tab-link {
+  background-color: white;
+  border-top: 0; 
+  color: #333;
+  display: inline-block;
+  padding: 0.75em 1em;
+  text-decoration: none;
+}
+
+.accordion-tabs-minimal a.tab-link:hover {
+  color: #477DCA;
+  cursor: pointer;
+}
+
+.accordion-tabs-minimal a.tab-link:focus {
+  outline: none;
+}
+
+.accordion-tabs-minimal a.tab-link.is-active {
+  border: solid 1px gainsboro;
+  border-bottom-color: transparent;
+  margin-bottom: -1px; 
+}
+
+.accordion-tabs-minimal .tab-content {
+  padding: 1.5em 1em;
+  width: 100%;
+  border-top: solid 1px gainsboro;
+  float: left;
+}
