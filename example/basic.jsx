@@ -1,7 +1,7 @@
 import React from 'react';
 import {Tabs, Tab} from '../src/index';
 
-require('../src/css/default');
+require('../src/css/default.css');
 
 export default class Basic extends React.Component {
 

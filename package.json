@@ -1,6 +1,6 @@
 {
   "name": "legit-tabs",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "tabs, done right",
   "main": "lib/index.js",
   "scripts": {

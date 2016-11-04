@@ -6,10 +6,11 @@ export default class Tabs extends React.Component {
   }
 
   constructor(props) {
-    super()
+    super(props);
+
     this.state = {
       active: props.active || props.children[0].props.name
-    }
+    };
   }
 
   renderChildren(){
@@ -18,12 +19,12 @@ export default class Tabs extends React.Component {
         ...child.props,
         clicked: this.clicked,
         active: this.state.active === child.props.name ? true : false
-      })
-    })
+      });
+    });
   }
 
   clicked = (active) => {
-    this.setState({active})
+    this.setState({active});
   }
 
   render() {
@@ -33,6 +34,6 @@ export default class Tabs extends React.Component {
       <ul className={`accordion-tabs-minimal ${className}`} {...props}>
         { this.renderChildren() }
       </ul>
-    )
+    );
   }
 }
