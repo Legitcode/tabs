@@ -28,10 +28,15 @@ export default class Tabs extends React.Component {
   }
 
   render() {
-    let { className, ...props } = this.props;
+    const { className, ...rest } = this.props;
+
+    // This is a hack to make React 15 happy. We can't pass the `active` prop
+    // through to the `ul` component. This component needs a bit of a rewrite
+    // so we'll go ahead and just do this for now.
+    delete rest.active;
 
     return (
-      <ul className={`accordion-tabs-minimal ${className}`} {...props}>
+      <ul className={`accordion-tabs-minimal ${className}`} {...rest}>
         { this.renderChildren() }
       </ul>
     );
